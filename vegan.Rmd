@@ -23,7 +23,8 @@ packages <- c("base",
               'knitr',
               'rmarkdown',
               'prettydoc',
-              'vegan')
+              'vegan',
+              'tibble')
 installed_packages <- packages %in% rownames(installed.packages())
 if(any(installed_packages == FALSE)){
   install.packages(packages[!installed_packages])
@@ -59,7 +60,7 @@ So, we can go ahead and calculate species diversity in the 50 plots using shanno
 We can do for all of them:
 
 ```{r}
-diversity(BCI, index = 'shannon') # This calculates an index for each plot, so 50 indices
+as_tibble(diversity(BCI, index = 'shannon')) # This calculates an index for each plot, so 50 indices
 ```
 
 ```{r}
