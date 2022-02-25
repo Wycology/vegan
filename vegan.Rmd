@@ -1,0 +1,109 @@
+---
+title: "<center>**Introduction to working with vegan package in R**</center>"
+author: "<center>Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com) </center>"
+date: "<center>`r Sys.time()`</center>"
+bibliography: 
+  - bib/packages.bib
+nocite: '@*'
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    theme: darkly
+    #highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libs, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
+packages <- c("base",
+              'knitr',
+              'rmarkdown',
+              'prettydoc',
+              'vegan')
+installed_packages <- packages %in% rownames(installed.packages())
+if(any(installed_packages == FALSE)){
+  install.packages(packages[!installed_packages])
+}
+lapply(packages, library, character.only = TRUE) |> invisible()
+```
+
+```{r write_bib, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
+knitr::write_bib(c(
+  .packages(), packages
+), 'bib/packages.bib')
+```
+
+# Background
+
+`vegan` is one of the packages which features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
+
+To begin with we can load some inbuilt data, BCI.
+
+```{r}
+data("BCI")
+```
+Seems there is a lot of data here, we can check the dimensions of the dataframe using the `dim` finction from base `R` package.
+
+```{r}
+dim(BCI)
+```
+
+So, this is a data set of 50 sampling plots indicating number of individuals of species of trees counted in each plot. Typical ecological survey work in community ecology.
+
+So, we can go ahead and calculate species diversity in the 50 plots using shannon index. There are also indices like simpson or invsimpson that one can calculate from the data.
+
+We can do for all of them:
+
+```{r}
+diversity(BCI, index = 'shannon') # This calculates an index for each plot, so 50 indices
+```
+
+```{r}
+diversity(BCI, index = 'simpson')
+```
+
+```{r}
+diversity(BCI, index = 'invsimpson')
+```
+
+The indices are quite related to each other as indicated in the following plots.
+
+Relationship between shannon and simpson indices of diversity.
+
+```{r}
+plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'simpson'))
+```
+
+Relationship between shannon and invsimpson indices of diversity.
+
+```{r}
+plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'invsimpson'))
+```
+
+Relationship between simpson and invsimpson indices of diversity.
+
+```{r}
+plot(diversity(BCI, index = 'simpson'), diversity(BCI, index = 'invsimpson')) # curvilinear relationship
+```
+
+We can also calculate fisher.alpha for the dataset using the function `fisher.alpha()`.
+
+```{r}
+fisher.alpha(BCI)
+```
+
+Further, we can plot species accumulation curve for the dataset. This is showing how the number of species vary wiith number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
+
+```{r}
+plot(specaccum(BCI))
+```
+
+```{r}
+plot(decorana(BCI))
+```
+
+# References
