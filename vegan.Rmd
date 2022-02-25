@@ -41,20 +41,28 @@ knitr::write_bib(c(
 
 `vegan` is one of the packages which features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
 
+# Loading data
+
 To begin with we can load some inbuilt data, BCI.
 
 ```{r}
 data("BCI")
 ```
+
 Seems there is a lot of data here, we can check the dimensions of the dataframe using the `dim` finction from base `R` package.
 
 ```{r}
 dim(BCI)
 ```
 
+
+# Calculating diversity indices
+
 So, this is a data set of 50 sampling plots indicating number of individuals of species of trees counted in each plot. Typical ecological survey work in community ecology.
 
 So, we can go ahead and calculate species diversity in the 50 plots using shannon index. There are also indices like simpson or invsimpson that one can calculate from the data.
+
+## Shannon index
 
 We can do for all of them:
 
@@ -62,13 +70,19 @@ We can do for all of them:
 diversity(BCI, index = 'shannon') # This calculates an index for each plot, so 50 indices
 ```
 
+## Simpson index
+
 ```{r}
 diversity(BCI, index = 'simpson')
 ```
 
+## Inverse Simpson index
+
 ```{r}
 diversity(BCI, index = 'invsimpson')
 ```
+
+# Some plots comparing the indices
 
 The indices are quite related to each other as indicated in the following plots.
 
@@ -90,17 +104,24 @@ Relationship between simpson and invsimpson indices of diversity.
 plot(diversity(BCI, index = 'simpson'), diversity(BCI, index = 'invsimpson')) # curvilinear relationship
 ```
 
+## Fisher alpha index
+
 We can also calculate fisher.alpha for the dataset using the function `fisher.alpha()`.
 
 ```{r}
 fisher.alpha(BCI)
 ```
 
+# Species cummulative curve
+
 Further, we can plot species accumulation curve for the dataset. This is showing how the number of species vary wiith number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
 
 ```{r}
 plot(specaccum(BCI))
 ```
+
+
+# Detrended correspondence analysis
 
 Lastly, for now, we can check for detrended correspondence analysis plot using `decorana()` function.
 
