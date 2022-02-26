@@ -69,7 +69,7 @@ specpool(BCI, smallsample = TRUE)
 ```
 
 
-# Calculating diversity indices
+# Calculating selected diversity indices
 
 So, this is a data set of 50 sampling plots indicating number of individuals of species of trees counted in each plot. Typical ecological survey work in community ecology.
 
