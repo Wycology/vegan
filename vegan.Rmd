@@ -83,7 +83,7 @@ We can do for all of them:
 diversity(BCI, index = 'shannon') # This calculates an index for each plot, so 50 indices
 ```
 
-## Simpson index
+## Simpson index calculation
 
 ```{r}
 diversity(BCI, index = 'simpson')
