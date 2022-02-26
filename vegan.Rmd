@@ -55,6 +55,19 @@ Seems there is a lot of data here, we can check the dimensions of the dataframe 
 dim(BCI)
 ```
 
+Another way to see the number of species in the dataset is to use `specnumber()` function.
+
+```{r}
+specnumber(BCI)
+```
+
+There is also possibility to extimate the number of species in the pool using `specpool()` function in `R`. So, actually there are 225 species, but the estimator gives values from 236 to 247 with some standard errors.
+
+
+```{r}
+specpool(BCI, smallsample = TRUE)
+```
+
 
 # Calculating diversity indices
 
@@ -117,7 +130,9 @@ fisher.alpha(BCI)
 Further, we can plot species accumulation curve for the dataset. This is showing how the number of species vary wiith number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
 
 ```{r}
-plot(specaccum(BCI))
+plot(specaccum(comm = BCI, method = 'random', permutations = 100))
+
+# other methods include rarefaction, site, collector, exact, coleman
 ```
 
 
