@@ -49,7 +49,7 @@ To begin with we can load some inbuilt data, BCI.
 data("BCI")
 ```
 
-Seems there is a lot of data here, we can check the dimensions of the dataframe using the `dim` finction from base `R` package.
+Seems there  a lot of data here, we can check the dimensions of the dataframe using the `dim` finction from base `R` package.
 
 ```{r}
 dim(BCI)
