@@ -152,6 +152,13 @@ data(mite)
 data("mite.env")
 ```
 
+
+```{r}
+summary(mite.env)
+```
+
+
+
 ```{r}
 mite_hel <- decostand(mite, method = 'hellinger')
 nmds1 <- metaMDS(mite_hel, autotransform = F)
@@ -244,6 +251,9 @@ p2
 ggarrange(p1, p2, ncol = 1)
 ```
 
+```{r}
+
+```
 
 
 
