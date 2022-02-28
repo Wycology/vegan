@@ -173,6 +173,8 @@ ordiplot(nmds1, type = 't')
 autoplot(nmds1)
 ```
 
+Here I make some informative plots.
+
 ```{r}
 fort <- fortify(nmds1)
 ggplot() +
