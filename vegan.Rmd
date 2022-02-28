@@ -23,7 +23,9 @@ packages <- c("base",
               'knitr',
               'rmarkdown',
               'prettydoc',
-              'vegan')
+              'vegan',
+              'ggvegan',
+              'ggpubr')
 installed_packages <- packages %in% rownames(installed.packages())
 if(any(installed_packages == FALSE)){
   install.packages(packages[!installed_packages])
@@ -143,5 +145,133 @@ Lastly, for now, we can check for detrended correspondence analysis plot using `
 ```{r}
 plot(decorana(BCI))
 ```
+# Working with mite data
+
+```{r}
+data(mite)
+data("mite.env")
+```
+
+```{r}
+mite_hel <- decostand(mite, method = 'hellinger')
+nmds1 <- metaMDS(mite_hel, autotransform = F)
+```
+
+```{r}
+ordiplot(nmds1)
+```
+```{r}
+ordiplot(nmds1, type = 't')
+```
+
+```{r}
+autoplot(nmds1)
+```
+
+```{r}
+fort <- fortify(nmds1)
+ggplot() +
+  geom_point(data = subset(fort, Score == 'sites'),
+             mapping = aes(x = NMDS1, y = NMDS2),
+             color = 'black',
+             alpha = 0.5) +
+  geom_segment(data = subset(fort, Score == 'species'),
+               mapping = aes(x = 0, y = 0, xend = NMDS1, yend = NMDS2),
+               arrow = arrow(length = unit(0.015, 'npc'),
+                             type = 'closed'),
+               color = 'darkgray',
+               size = 0.8) +
+  geom_text(data = subset(fort, Score == 'species'),
+            mapping = aes(label = Label, x = NMDS1 * 1.1, y = NMDS2 * 1.1)) +
+  geom_abline(intercept = 0, slope = 0, linetype = 'dashed', size = 0.8, color = 'gray') +
+  geom_vline(aes(xintercept = 0), linetype = 'dashed', size = 0.8, color = 'gray') +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
+```
+
+```{r}
+p1 <- ggplot() +
+  geom_point(data = subset(fort, Score == 'sites'),
+             mapping = aes(x = NMDS1, y = NMDS2),
+             color = 'black',
+             alpha = 0.5) +
+  geom_segment(data = subset(fort, Score == 'species'),
+               mapping = aes(x = 0, y = 0, xend = NMDS1, yend = NMDS2),
+               arrow = arrow(length = unit(0.015, 'npc'),
+                             type = 'closed'),
+               color = 'darkgray',
+               size = 0,
+               alpha = 0) +
+  geom_text(data = subset(fort, Score == 'species'),
+            mapping = aes(label = Label, x = NMDS1 * 1.1, y = NMDS2 * 1.1),
+            alpha = 0) +
+  geom_abline(intercept = 0, slope = 0, linetype = 'dashed', size = 0.8, color = 'gray') +
+  geom_vline(aes(xintercept = 0), linetype = 'dashed', size = 0.8, color = 'gray') +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
+p1
+```
+
+```{r}
+p2 <- ggplot() +
+  geom_point(data = subset(fort, Score == 'sites'),
+             mapping = aes(x = NMDS1, y = NMDS2),
+             color = 'black',
+             alpha = 0) +
+  geom_segment(data = subset(fort, Score == 'species'),
+               mapping = aes(x = 0, y = 0, xend = NMDS1, yend = NMDS2),
+               arrow = arrow(length = unit(0.015, 'npc'),
+                             type = 'closed'),
+               color = 'darkgray',
+               size = 0.8) +
+  geom_text(data = subset(fort, Score == 'species'),
+            mapping = aes(label = Label, x = NMDS1 * 1.1, y = NMDS2 * 1.1)) +
+  geom_abline(intercept = 0, slope = 0, linetype = 'dashed', size = 0.8, color = 'gray') +
+  geom_vline(aes(xintercept = 0), linetype = 'dashed', size = 0.8, color = 'gray') +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = 'black'))
+p2
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # References
