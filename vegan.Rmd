@@ -65,11 +65,9 @@ specnumber(BCI)
 
 There is also possibility to extimate the number of species in the pool using `specpool()` function in `R`. So, actually there are 225 species, but the estimator gives values from 236 to 247 with some standard errors.
 
-
 ```{r}
 specpool(BCI, smallsample = TRUE)
 ```
-
 
 # Calculating selected diversity indices
 
@@ -137,7 +135,6 @@ plot(specaccum(comm = BCI, method = 'random', permutations = 100))
 # other methods include rarefaction, site, collector, exact, coleman
 ```
 
-
 # Detrended correspondence analysis
 
 Lastly, for now, we can check for detrended correspondence analysis plot using `decorana()` function.
@@ -145,20 +142,19 @@ Lastly, for now, we can check for detrended correspondence analysis plot using `
 ```{r}
 plot(decorana(BCI))
 ```
+
 # Working with mite data
 
-This has two separate dataframes, one for species per plot and the other for the environemntal variables observed from the same sampling plots as the species.
+This has two separate dataframes, one for species per plot and the other for the environmental variables observed from the same sampling plots as the species.
 
 ```{r}
 data(mite)
 data("mite.env")
 ```
 
-
 ```{r}
 summary(mite.env)
 ```
-
 
 ```{r}
 mite_hel <- decostand(mite, method = 'hellinger')
@@ -168,6 +164,7 @@ nmds1 <- metaMDS(mite_hel, autotransform = F)
 ```{r}
 ordiplot(nmds1)
 ```
+
 ```{r}
 ordiplot(nmds1, type = 't')
 ```
@@ -247,7 +244,6 @@ p2 <- ggplot() +
 p2
 ```
 
-
 ```{r}
 ggarrange(p1, p2, ncol = 1)
 ```
@@ -285,6 +281,5 @@ p3
 ```{r}
 ggarrange(p3, p2, ncol = 1)
 ```
-
 
 # References
