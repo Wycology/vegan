@@ -41,7 +41,7 @@ knitr::write_bib(c(
 
 # Background
 
-Here I t`vegan` is one of the packages which features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
+Here I ta`vegan` is one of the packages which features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
 
 # Loading data
 
