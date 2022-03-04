@@ -63,7 +63,7 @@ Another way to see the number of species in the dataset is to use `specnumber()`
 specnumber(BCI)
 ```
 
-There is also possibility to extimate the number of species in the pool using `specpool()` function in `R`. So, actually there are 225 species, but the estimator gives values from 236 to 247 with some standard errors.
+There is also possibility to estimate the number of species in the pool using `specpool()` function in `R`. So, actually there are 225 species, but the estimator gives values from 236 to 247 with some standard errors.
 
 ```{r}
 specpool(BCI, smallsample = TRUE)
