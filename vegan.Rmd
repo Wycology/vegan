@@ -43,7 +43,7 @@ knitr::write_bib(c(
 
 Here I take a look at `vegan`. `vegan` is one of the packages which features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
 
-# Loading data
+# Loadin data
 
 To begin with we can load some inbuilt data, BCI.
 
