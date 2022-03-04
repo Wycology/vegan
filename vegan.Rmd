@@ -45,7 +45,7 @@ Here I take a look at `vegan`. `vegan` is one of the packages which features in 
 
 # Load data
 
-To begin with we can load some inbuilt data, BCI.
+To begin with we can load some inbuilt data, BCI, that come .
 
 ```{r}
 data("BCI")
