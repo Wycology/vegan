@@ -80,7 +80,7 @@ So, we can go ahead and calculate species diversity in the 50 plots using shanno
 We can do for all of them:
 
 ```{r}
-diversity(BCI, index = 'shannon') # This calculates an ind 
+diversity(BCI, index = 'shannon') # This calculates an 
 ```
 
 ## Simpson index calculation
