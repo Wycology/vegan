@@ -45,7 +45,7 @@ I take a look at `vegan`. `vegan` is an R package that features in day to day wo
 
 # Load data
 
-To begin with load some inbuilt data, BCI, that come with the `vegan` package.
+To beginload some inbuilt data, BCI, that come with the `vegan` package.
 
 ```{r}
 data("BCI")
