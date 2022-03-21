@@ -77,7 +77,7 @@ So, we can go ahead and calculate species diversity in the 50 plots using shanno
 
 ## Shannon index
 
-We can do for all of t
+We can do for all 
 
 ```{r}
 diversity(BCI, index = 'shannon')
