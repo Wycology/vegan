@@ -126,7 +126,7 @@ fisher.alpha(BCI)
 
 # Species cummulative curve
 
-Further, we can plot species accumulation curve for the dataset. This is showing how the number of species vary wiith number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
+Further, we can plot species accumulation curve for the dataset. This is showing how the number of species vary with number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
 
 ```{r}
 plot(specaccum(comm = BCI, method = 'random', permutations = 100))
