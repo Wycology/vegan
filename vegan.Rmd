@@ -57,7 +57,7 @@ Seems there are a lot of data here, we can check the dimensions of the dataframe
 dim(BCI)
 ```
 
-Another way to se the number of species in the dataset is to use `specnumber()` function.
+Another way to s the number of species in the dataset is to use `specnumber()` function.
 
 ```{r}
 specnumber(BCI)
