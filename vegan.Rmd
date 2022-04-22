@@ -57,7 +57,7 @@ Seems there are a lot of data here, we can check the dimensions of the data.fram
 dim(BCI)
 ```
 
-Another way o obtain the number of species in the data-set is to use `specnumber()` function.
+Another way of obtain the number of species in the data-set is to use `specnumber()` function.
 
 ```{r}
 specnumber(BCI)
