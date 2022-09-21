@@ -135,7 +135,7 @@ plot(specaccum(comm = BCI, method = 'random', permutations = 100))
 
 # Detrended correspondence analysis
 
-Lastly, f we can check for **detrended** correspondence analysis plot using `decorana()` function.
+Lastly,  we can check for **detrended** correspondence analysis plot using `decorana()` function.
 
 ```{r}
 plot(decorana(BCI))
