@@ -143,7 +143,7 @@ plot(decorana(BCI))
 
 # Working with mite data
 
-This has two separate data-frames, one for species per plot and the other for the environmental variables recorde from the same sampling plots as the species.
+This has two separate data-frames, one for species per plot and the other for the environmental variables recorded from the same sampling plots as the species.
 
 ```{r}
 data(mite)
