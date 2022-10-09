@@ -1,5 +1,5 @@
 ---
-title: "<center>**Introduction to work vegan package in R**</center>"
+title: "<center>**Introduction to wor vegan package in R**</center>"
 author: "<center>Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com) </center>"
 date: "<center>`r Sys.time()`</center>"
 bibliography: 
