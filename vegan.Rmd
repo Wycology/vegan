@@ -25,7 +25,8 @@ packages <- c("base",
               'prettydoc',
               'vegan',
               'ggvegan',
-              'ggpubr')
+              'ggpubr',
+              "tidyverse")
 installed_packages <- packages %in% rownames(installed.packages())
 if(any(installed_packages == FALSE)){
   install.packages(packages[!installed_packages])
@@ -61,6 +62,12 @@ Another way of getting the number of species in the data-set is to use `specnumb
 
 ```{r}
 specnumber(BCI)
+```
+
+Ca further have the specnumber(BCI) coverted to a data frame and arranged to know which sampling plot had the highest number of species.
+
+```{r}
+specnumber(BCI) |> as.data.frame() |> arrange(-specnumber(BCI))
 ```
 
 It is possible to estimate the number of species in the pool using `specpool()` function in `R`. Actually, there are 225 species, but the estimator gives values from 236 to 247 with some standard errors.
