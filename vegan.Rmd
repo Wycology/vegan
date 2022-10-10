@@ -107,7 +107,7 @@ The indices are quite related to each other as indicated in the following plots.
 Relationship between shannon and simpson indices of diversity.
 
 ```{r}
-plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'simpson'))
+plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'simpson')) # Kind of linear
 ```
 
 Relationship between shannon and invsimpson indices of diversity.
