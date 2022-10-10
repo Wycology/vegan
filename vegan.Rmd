@@ -124,7 +124,7 @@ plot(diversity(BCI, index = 'simpson'), diversity(BCI, index = 'invsimpson')) # 
 
 ## Fisher alpha index
 
-We can also calculate fisher.alpha for the dataset using the function `fisher.alpha()`.
+We can also calculate fisher.alpha for the data-set using the function `fisher.alpha()`.
 
 ```{r}
 fisher.alpha(BCI)
