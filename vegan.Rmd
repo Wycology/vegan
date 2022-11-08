@@ -70,7 +70,7 @@ Can further have the specnumber(BCI) converted into a data frame and arranged to
 specnumber(BCI) |> as.data.frame() |> arrange(-specnumber(BCI))
 ```
 
-It is possible to estimate the number of species in the pool using `specpool()` function in `R`. Actually, there are 225 species, but the estimator gives values from 236 to 247 with some standard errors ar.
+It is possible to estimate the number of species in the pool using `specpool()` function in `R`. Actually, there are 225 species, but the estimator gives values from 236 to 247 with some standard errors around.
 
 ```{r}
 specpool(BCI, smallsample = TRUE)
