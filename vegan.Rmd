@@ -137,7 +137,7 @@ Further, we can plot species accumulation curve for the data-set. This is showin
 ```{r}
 plot(specaccum(comm = BCI, method = 'random', permutations = 100))
 
-# Other methods includ rarefaction, site, collector, exact, coleman
+# Other methods include rarefaction, site, collector, exact, coleman
 ```
 
 # Detrended correspondence analysis
