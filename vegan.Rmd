@@ -64,7 +64,7 @@ Another way of getting the number of species in the data-set is to use `specnumb
 specnumber(BCI)
 ```
 
-Can further have the specnumber(BCI) converted into a data frame and arranged to know which sampling plot had the highest number of species.
+Can furthe have the specnumber(BCI) converted into a data frame and arranged to know which sampling plot had the highest number of species.
 
 ```{r}
 specnumber(BCI) |> as.data.frame() |> arrange(-specnumber(BCI))
