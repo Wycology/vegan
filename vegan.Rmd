@@ -42,7 +42,7 @@ knitr::write_bib(c(
 
 # Background
 
-I explore t`vegan`. `vegan` is an R library that features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
+I explore th`vegan`. `vegan` is an R library that features in day to day working of a community ecologist. It would be great to know a few cases where the package comes in handy.
 
 # Load data
 
