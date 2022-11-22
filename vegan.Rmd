@@ -58,7 +58,7 @@ Seems there are a lot of data here, we can check the dimensions of the data.fram
 dim(BCI)
 ```
 
-Theother way of getting the number of species in the data-set is to use `specnumber()` function in `vegan` package.
+The other way of getting the number of species in the data-set is to use `specnumber()` function in `vegan` package.
 
 ```{r}
 specnumber(BCI)
