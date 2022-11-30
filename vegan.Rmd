@@ -76,7 +76,7 @@ It is possible to estimate the number of species in the pool using `specpool()` 
 specpool(BCI, smallsample = TRUE)
 ```
 
-# Calculating s selected diversity indices
+# Calculating so selected diversity indices
 
 Here is a data-set of 50 plots indicaing number of individuals of species of trees counted i each plot. Typical ecological survey work.
 
