@@ -7,3 +7,11 @@ vegan
 ggplot2
 ggvegan
 ggpubr
+tidyverse
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
