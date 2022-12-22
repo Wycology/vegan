@@ -100,7 +100,7 @@ diversity(BCI, index = 'simpson') # Changing the code to calculate the simpson d
 diversity(BCI, index = 'invsimpson') # Setting the code to run inverse of simpson index
 ```
 
-# Some plots thacomparing the indices
+# Some plots thatcomparing the indices
 
 The indices are quite related to each other as indicated in the following plots.
 
