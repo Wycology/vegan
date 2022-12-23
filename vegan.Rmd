@@ -97,7 +97,7 @@ diversity(BCI, index = 'simpson') # Changing the code to calculate the simpson d
 ## Inverse Simpson index
 
 ```{r}
-diversity(BCI, index = 'invsimpson') # She code to run inverse of simpson index
+diversity(BCI, index = 'invsimpson') # he code to run inverse of simpson index
 ```
 
 # Plots that compare the indices
