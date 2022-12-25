@@ -1527,20 +1527,21 @@ border-radius: 0px;
 <h1 class="title toc-ignore"><center> ¶ <strong>Introduction to vegan
 package in R</strong> ¶ </center></h1>
 <h4 class="author"><center> ¶ Wyclife Agumba Oluoch (<a href="mailto:wyclifeoluoch@gmail.com" class="email">wyclifeoluoch@gmail.com</a>) ¶ </center></h4>
-<h4 class="date"><center> ¶ 2022-11-16 20:16:52 ¶ </center></h4>
+<h4 class="date"><center> ¶ 2022-12-25 17:01:32 ¶ </center></h4>
 
 </div>
 
 
 <div id="background" class="section level1">
 <h1>Background</h1>
-<p>I explore <code>vegan</code>. <code>vegan</code> is an R library that
-features in day to day working of a community ecologist. It would be
-great to know a few cases where the package comes in handy.</p>
+<p>Here, I explore the <code>vegan</code> package. <code>vegan</code> is
+an R library that features in day to day working of a community
+ecologist. It would be great to know a few cases where the package comes
+in handy.</p>
 </div>
 <div id="load-data" class="section level1">
 <h1>Load data</h1>
-<p>We load some inbuilt data, BCI, that come with the <code>vegan</code>
+<p>Load inbuilt data, BCI, that come with the <code>vegan</code>
 package.</p>
 <pre class="r"><code>data(&quot;BCI&quot;)</code></pre>
 <p>Seems there are a lot of data here, we can check the dimensions of
@@ -1548,8 +1549,8 @@ the data.frame using the <code>dim</code> function from base
 <code>R</code> package.</p>
 <pre class="r"><code>dim(BCI)</code></pre>
 <pre><code>## [1]  50 225</code></pre>
-<p>Another way of getting the number of species in the data-set is to
-use <code>specnumber()</code> function in <code>vegan</code>
+<p>The other way of getting the number of species in the data-set is to
+use <code>specnumber()</code> function within the <code>vegan</code>
 package.</p>
 <pre class="r"><code>specnumber(BCI)</code></pre>
 <pre><code>##   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20 
@@ -1558,9 +1559,8 @@ package.</p>
 ##  99  91  99  95 105  91  99  85  86  97  77  88  86  92  83  92  88  82  84  80 
 ##  41  42  43  44  45  46  47  48  49  50 
 ## 102  87  86  81  81  86 102  91  91  93</code></pre>
-<p>Can further have the specnumber(BCI) converted into a data frame and
-arranged to know which sampling plot had the highest number of
-species.</p>
+<p>Can have the specnumber(BCI) converted into a data frame and arranged
+to know which sampling plot had the highest number of species.</p>
 <pre class="r"><code>specnumber(BCI) |&gt; as.data.frame() |&gt; arrange(-specnumber(BCI))</code></pre>
 <pre><code>##    specnumber(BCI)
 ## 19             109
@@ -1623,7 +1623,7 @@ standard errors around them.</p>
 </div>
 <div id="calculating-selected-diversity-indices" class="section level1">
 <h1>Calculating selected diversity indices</h1>
-<p>Here is a data-set of 50 plots indicating number of individuals of
+<p>Here is a data-set of 50 plots indicaing number of individuals of
 species of trees counted i each plot. Typical ecological survey
 work.</p>
 <p>We can go ahead and calculate species diversity in the 50 plots using
@@ -1668,7 +1668,7 @@ calculate from the data-set.</p>
 </div>
 <div id="inverse-simpson-index" class="section level2">
 <h2>Inverse Simpson index</h2>
-<pre class="r"><code>diversity(BCI, index = &#39;invsimpson&#39;) # Setting the code to run inverse of simpson index</code></pre>
+<pre class="r"><code>diversity(BCI, index = &#39;invsimpson&#39;) # The code to run inverse of simpson index</code></pre>
 <pre><code>##         1         2         3         4         5         6         7         8 
 ## 39.415554 31.584877 28.254778 35.225771 31.081658 26.849731 30.489077 30.487609 
 ##         9        10        11        12        13        14        15        16 
@@ -1685,8 +1685,8 @@ calculate from the data-set.</p>
 ## 25.611603 31.228916</code></pre>
 </div>
 </div>
-<div id="some-plots-comparing-the-indices" class="section level1">
-<h1>Some plots comparing the indices</h1>
+<div id="plots-that-compare-the-indices" class="section level1">
+<h1>Plots that compare the indices</h1>
 <p>The indices are quite related to each other as indicated in the
 following plots.</p>
 <p>Relationship between shannon and simpson indices of diversity.</p>
@@ -3098,9 +3098,17 @@ Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin
 Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and
 Richard Iannone. 2022. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
 </div>
+<div id="ref-R-purrr" class="csl-entry">
+Henry, Lionel, and Hadley Wickham. 2022. <em>Purrr: Functional
+Programming Tools</em>. <a href="https://CRAN.R-project.org/package=purrr">https://CRAN.R-project.org/package=purrr</a>.
+</div>
 <div id="ref-R-ggpubr" class="csl-entry">
-Kassambara, Alboukadel. 2020. <em>Ggpubr: Ggplot2 Based Publication
+Kassambara, Alboukadel. 2022. <em>Ggpubr: Ggplot2 Based Publication
 Ready Plots</em>. <a href="https://rpkgs.datanovia.com/ggpubr/">https://rpkgs.datanovia.com/ggpubr/</a>.
+</div>
+<div id="ref-R-tibble" class="csl-entry">
+Müller, Kirill, and Hadley Wickham. 2022. <em>Tibble: Simple Data
+Frames</em>. <a href="https://CRAN.R-project.org/package=tibble">https://CRAN.R-project.org/package=tibble</a>.
 </div>
 <div id="ref-R-vegan" class="csl-entry">
 Oksanen, Jari, Gavin L. Simpson, F. Guillaume Blanchet, Roeland Kindt,
@@ -3135,11 +3143,41 @@ of Data</em>. <a href="https://github.com/gavinsimpson/permute">https://github.c
 Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data
 Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
 </div>
+<div id="ref-R-forcats" class="csl-entry">
+———. 2022a. <em>Forcats: Tools for Working with Categorical Variables
+(Factors)</em>. <a href="https://CRAN.R-project.org/package=forcats">https://CRAN.R-project.org/package=forcats</a>.
+</div>
+<div id="ref-R-stringr" class="csl-entry">
+———. 2022b. <em>Stringr: Simple, Consistent Wrappers for Common String
+Operations</em>. <a href="https://CRAN.R-project.org/package=stringr">https://CRAN.R-project.org/package=stringr</a>.
+</div>
+<div id="ref-R-tidyverse" class="csl-entry">
+———. 2022c. <em>Tidyverse: Easily Install and Load the Tidyverse</em>.
+<a href="https://CRAN.R-project.org/package=tidyverse">https://CRAN.R-project.org/package=tidyverse</a>.
+</div>
+<div id="ref-tidyverse2019" class="csl-entry">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy
+D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019.
+<span>“Welcome to the <span class="nocase">tidyverse</span>.”</span>
+<em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
 <div id="ref-R-ggplot2" class="csl-entry">
 Wickham, Hadley, Winston Chang, Lionel Henry, Thomas Lin Pedersen,
 Kohske Takahashi, Claus Wilke, Kara Woo, Hiroaki Yutani, and Dewey
 Dunnington. 2022. <em>Ggplot2: Create Elegant Data Visualisations Using
 the Grammar of Graphics</em>. <a href="https://CRAN.R-project.org/package=ggplot2">https://CRAN.R-project.org/package=ggplot2</a>.
+</div>
+<div id="ref-R-dplyr" class="csl-entry">
+Wickham, Hadley, Romain François, Lionel Henry, and Kirill Müller. 2022.
+<em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr">https://CRAN.R-project.org/package=dplyr</a>.
+</div>
+<div id="ref-R-tidyr" class="csl-entry">
+Wickham, Hadley, and Maximilian Girlich. 2022. <em>Tidyr: Tidy Messy
+Data</em>. <a href="https://CRAN.R-project.org/package=tidyr">https://CRAN.R-project.org/package=tidyr</a>.
+</div>
+<div id="ref-R-readr" class="csl-entry">
+Wickham, Hadley, Jim Hester, and Jennifer Bryan. 2022. <em>Readr: Read
+Rectangular Text Data</em>. <a href="https://CRAN.R-project.org/package=readr">https://CRAN.R-project.org/package=readr</a>.
 </div>
 <div id="ref-knitr2014" class="csl-entry">
 Xie, Yihui. 2014. <span>“Knitr: A Comprehensive Tool for Reproducible
