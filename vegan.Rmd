@@ -46,7 +46,7 @@ I explore the `vegan` package. `vegan` is an R library that features a number of
 
 # Load data
 
-Load inbuilt data, BCI, that come with the `vegan` package.
+Loading inbuilt data, BCI, that come with the `vegan` package.
 
 ```{r}
 data("BCI")
