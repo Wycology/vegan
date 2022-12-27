@@ -116,7 +116,7 @@ Relationship between shannon and invsimpson indices of diversity.
 plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'invsimpson'))
 ```
 
-Relationship between `simpson` and invsimpson indices of diversity.
+Relationship between `simpson` and `invsimpson` indices of diversity.
 
 ```{r}
 plot(diversity(BCI, index = 'simpson'), diversity(BCI, index = 'invsimpson')) # curvilinear relationship
