@@ -161,6 +161,8 @@ data("mite.env")
 summary(mite.env)
 ```
 
+Calculating the metaMDS on the data.
+
 ```{r}
 mite_hel <- decostand(mite, method = 'hellinger')
 nmds1 <- metaMDS(mite_hel, autotransform = F)
