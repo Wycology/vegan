@@ -58,7 +58,7 @@ Seems there are a lot of data here, we can check the dimensions of the data fram
 dim(BCI)
 ```
 
-The other way of getting the number of species per site in the data-set is to use `specnumber()` function within the `vegan` package.
+The other way of getting the number of species per sampling plot in the data-set is to use `specnumber()` function within the `vegan` package.
 
 ```{r}
 specnumber(BCI)
@@ -70,7 +70,7 @@ We can have the `specnumber(BCI)` converted into a data frame and arranged to kn
 specnumber(BCI) |> as.data.frame() |> arrange(-specnumber(BCI))
 ```
 
-It is possible to estimate the number of species in the pool using `specpool()` function in `R`. There are 225 species, but the estimator gives values from 236 to 247 with some standard errors around them.
+It is possible to estimate the number of species in the pool using `specpool()` function from vegan in `R`. There are 225 species, but the estimator gives values from 236 to 247 with some standard errors around them. Would be interesting to go to the back-end and look at what goes on with this function.
 
 ```{r}
 specpool(BCI, smallsample = TRUE)
