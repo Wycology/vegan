@@ -28,7 +28,7 @@ packages <- c("base",
               'ggpubr',
               "tidyverse")
 installed_packages <- packages %in% rownames(installed.packages())
-if(any(installed_packages == FALSE)){
+if (any(installed_packages == FALSE)) {
   install.packages(packages[!installed_packages])
 }
 lapply(packages, library, character.only = TRUE) |> invisible()
