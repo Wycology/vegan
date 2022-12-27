@@ -78,7 +78,7 @@ specpool(BCI, smallsample = TRUE)
 
 # Calculating some diversity indices
 
-Here is a data-set of 50 plots indicaing number of individuals of species of trees counted i each plot. Typical ecological survey work.
+Here is a data-set of 50 plots indicating number of individuals of species of trees counted in each sampling plot. Typical ecological survey work.
 
 We can go ahead and calculate species diversity in the 50 plots using **shannon** index. There are also indices like **simpson** or **invsimpson** that one can calculate from the data-set.
 
@@ -104,7 +104,7 @@ diversity(BCI, index = 'invsimpson') # The code to run inverse of simpson index
 
 The indices are quite related to each other as indicated in the following plots.
 
-Relationship between shannon and simpson indices of diversity.
+Relationship between shannon and simpson diversity indices.
 
 ```{r}
 plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'simpson')) # Kind of linear
@@ -116,7 +116,7 @@ Relationship between shannon and invsimpson indices of diversity.
 plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'invsimpson'))
 ```
 
-Relationship between simpson and invsimpson indices of diversity.
+Relationship between `simpson` and invsimpson indices of diversity.
 
 ```{r}
 plot(diversity(BCI, index = 'simpson'), diversity(BCI, index = 'invsimpson')) # curvilinear relationship
@@ -130,7 +130,7 @@ We can also calculate fisher.alpha for the data-set using the function `fisher.a
 fisher.alpha(BCI)
 ```
 
-# Species cummulative curve
+# Species cumulative curve
 
 Further, we can plot species accumulation curve for the data-set. This is showing how the number of species vary with number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
 
