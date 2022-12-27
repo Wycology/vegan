@@ -11,14 +11,14 @@ output:
     toc_depth: 2
     toc_float: true
     theme: darkly
-    #highlight: pygments
+    highlight: pygments
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
-```{r libs, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
+```{r libs, echo = FALSE, warning = FALSE, message = FALSE, include = FALSE}
 packages <- c("base",
               'knitr',
               'rmarkdown',
