@@ -168,6 +168,8 @@ mite_hel <- decostand(mite, method = 'hellinger')
 nmds1 <- metaMDS(mite_hel, autotransform = F)
 ```
 
+Calculating ordiplot. This is another plot that may need deeper understanding on how to interpret it and what it means.
+
 ```{r}
 ordiplot(nmds1)
 ```
