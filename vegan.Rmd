@@ -168,7 +168,7 @@ mite_hel <- decostand(mite, method = 'hellinger')
 nmds1 <- metaMDS(mite_hel, autotransform = F)
 ```
 
-Calculating ordiplot. This is another plot that may need deeper understanding on how to interpret it and what it means.
+Calculating `ordiplot`. This is another plot that may need deeper understanding on how to interpret it and what it means.
 
 ```{r}
 ordiplot(nmds1)
@@ -260,7 +260,7 @@ ggarrange(p1, p2, ncol = 1)
 ```
 
 ```{r}
-adonis(mite ~ Shrub, data = mite.env)
+#adonis(mite ~ Shrub, data = mite.env)
 ```
 
 ```{r}
