@@ -148,7 +148,7 @@ Lastly, we can check for **detrended** correspondence analysis by plot using `de
 plot(decorana(BCI))
 ```
 
-# Wor with mite data
+# Wo with mite data
 
 This has two separate data-frames, one for species per plot and the other for the environmental variables recorded from the same sampling plots as the species.
 
