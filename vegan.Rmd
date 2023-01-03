@@ -161,7 +161,7 @@ data("mite.env")
 summary(mite.env)
 ```
 
-Calculating the `metaMDS` on the data. It is important to look into what these functions do and how to interpret their mean.
+Calculating the `metaMDS` on the data. It is important to look into what these functions do and how to interpret their mea.
 
 ```{r}
 mite_hel <- decostand(mite, method = 'hellinger')
