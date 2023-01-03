@@ -161,11 +161,7 @@ data("mite.env")
 summary(mite.env)
 ```
 
-Calculating the `metaMDS` on the data. It is important to look into what these functions do and how to interpret their result
-```{r}
-mite_hel <- decostand(mite, method = 'hellinger')
-nmds1 <- metaMDS(mite_hel, autotransform = F)
-```
+Calculating the `metaMDS` on the data. It is important to look into what these functions do and how to interpret their results
 
 Calculating `ordiplot`. This is another plot that may need deeper understanding on how to interpret it and what it means.
 
