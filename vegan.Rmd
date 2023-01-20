@@ -64,7 +64,7 @@ The other way of getting the number of species per sampling plot in the data-set
 specnumber(BCI)
 ```
 
-We can have the `specnumber(BCI)` converted into  datf and arranged to know which sampling plot had the highest number of species.
+We can have the `specnumber(BCI)` converted into  daf and arranged to know which sampling plot had the highest number of species.
 
 ```{r}
 specnumber(BCI) |> as.data.frame() |> arrange(-specnumber(BCI))
@@ -110,7 +110,7 @@ Relationship between shannon and simpson diversity indices.
 plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'simpson')) # Kind of linear
 ```
 
-Relationship between shannon and invsimpson indices of diversity.
+elationship between shannon and invsimpson indices of diversity.
 
 ```{r}
 plot(diversity(BCI, index = 'shannon'), diversity(BCI, index = 'invsimpson'))
