@@ -1,4 +1,5 @@
-library(vegan)
+library(vegan) # Version 2.6.4
+
 data("varespec")
 data("varechem")
 
