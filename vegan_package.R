@@ -10,3 +10,4 @@ plot(ord, type = "p")
 plot(ord, type = "n")
 
 ef <- envfit(ord, varechem)
+plot(ef, p.max = 0.05)
