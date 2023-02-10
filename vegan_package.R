@@ -5,6 +5,6 @@ data("varechem") # Corresponding environmental parameters
 
 ord <- metaMDS(varespec) # Ordination of the species
 
-plot(ord, type = "t")
+plot(ord, type = "t") # Showing the plot
 
 ef <- envfit(ord, varechem)
