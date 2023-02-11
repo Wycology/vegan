@@ -52,7 +52,7 @@ Loading inbuilt data, BCI, that come with the `vegan` package.
 data("BCI")
 ```
 
-Sether lot of data here, we can check the dimensions of the data frame using the `dim()` function from base `R` package.
+There are plenty data here, we can check the dimensions of the data frame using the `dim()` function from base `R` package.
 
 ```{r}
 dim(BCI)
