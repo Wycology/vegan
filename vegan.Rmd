@@ -80,7 +80,7 @@ specpool(BCI, smallsample = TRUE)
 
 Here is a dataset comprising 50 field plots indicating the number of individuals of species of trees counted in each sampling plot. Typical ecological survey work.
 
-We can go ahead a calculate species diversity in the 50 plots using **shannon** index. There are also indices like **simpson** or **invsimpson** that one can calculate from the data-set.
+We can go ahead  calculate species diversity in the 50 plots using **shannon** index. There are also indices like **simpson** or **invsimpson** that one can calculate from the data-set.
 
 ## Shannon index
 
