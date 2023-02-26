@@ -118,7 +118,8 @@ Assessing the relationship between shannon and invsimpson indices of diversity.
 
 ```{r}
 plot(diversity(BCI, 
-               index = 'shannon'), diversity(BCI, index = 'invsimpson'))
+               index = 'shannon'), 
+     diversity(BCI, index = 'invsimpson'))
 ```
 
 Relationship between `simpson` and `invsimpson` indices of diversity.
