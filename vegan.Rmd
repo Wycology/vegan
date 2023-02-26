@@ -127,7 +127,8 @@ Relationship between `simpson` and `invsimpson` indices of diversity.
 
 ```{r}
 plot(diversity(BCI, 
-               index = 'simpson'), diversity(BCI, index = 'invsimpson')) # curvilinear relationship
+               index = 'simpson'), 
+     diversity(BCI, index = 'invsimpson')) # curvilinear relationship
 ```
 
 ## Fisher alpha index
