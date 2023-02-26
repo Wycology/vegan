@@ -99,7 +99,8 @@ diversity(BCI,
 ## Inverse Simpson index
 
 ```{r}
-diversity(BCI, index = 'invsimpson') # The code to run inverse of simpson index
+diversity(BCI, 
+          index = 'invsimpson') # The code to run inverse of simpson index
 ```
 
 # Plots that compare the indices
