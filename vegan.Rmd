@@ -107,7 +107,7 @@ diversity(BCI,
 
 The indices are quite related to each other as indicated in the following plots.
 
-Relationship between shannon and simpson diversity indices.
+Relationship between Shannon and simpson diversity indices.
 
 ```{r}
 plot(diversity(BCI, 
