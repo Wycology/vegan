@@ -85,7 +85,8 @@ We can calculate species diversity in the 50 plots using **shannon** index. Ther
 ## Shannon index
 
 ```{r}
-diversity(BCI, index = 'shannon') # Just specify the index to be shannon
+diversity(BCI, 
+          index = 'shannon') # Just specify the index to be shannon
 ```
 
 ## Simpson index
