@@ -276,7 +276,8 @@ p3 <- ggplot() +
                            y = NMDS2, 
                            color = mite.env$Shrub),
              alpha = 0.5) +
-  geom_segment(data = subset(fort, Score == 'species'),
+  geom_segment(data = subset(fort, 
+                             Score == 'species'),
                mapping = aes(x = 0, y = 0, xend = NMDS1, yend = NMDS2),
                arrow = arrow(length = unit(0.015, 'npc'),
                              type = 'closed'),
