@@ -289,7 +289,9 @@ p3 <- ggplot() +
                alpha = 0) +
   geom_text(data = subset(fort, 
                           Score == 'species'),
-            mapping = aes(label = Label, x = NMDS1 * 1.1, y = NMDS2 * 1.1),
+            mapping = aes(label = Label, 
+                          x = NMDS1 * 1.1, 
+                          y = NMDS2 * 1.1),
             alpha = 0) +
   geom_abline(intercept = 0, slope = 0, linetype = 'dashed', size = 0.8, color = 'gray') +
   geom_vline(aes(xintercept = 0), linetype = 'dashed', size = 0.8, color = 'gray') +
