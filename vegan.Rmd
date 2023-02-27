@@ -270,7 +270,8 @@ ggarrange(p1, p2, ncol = 1)
 
 ```{r}
 p3 <- ggplot() +
-  geom_point(data = subset(fort, Score == 'sites'),
+  geom_point(data = subset(fort, 
+                           Score == 'sites'),
              mapping = aes(x = NMDS1, y = NMDS2, color = mite.env$Shrub),
              alpha = 0.5) +
   geom_segment(data = subset(fort, Score == 'species'),
