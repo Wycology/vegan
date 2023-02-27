@@ -296,7 +296,8 @@ p3
 
 ```{r}
 ggarrange(p3, 
-          p2, ncol = 1)
+          p2, 
+          ncol = 1)
 ```
 
 # References
