@@ -244,7 +244,8 @@ p2 <- ggplot() +
              color = 'black',
              alpha = 0) +
   geom_segment(data = subset(fort, Score == 'species'),
-               mapping = aes(x = 0, y = 0, xend = NMDS1, yend = NMDS2),
+               mapping = aes(x = 0, 
+                             y = 0, xend = NMDS1, yend = NMDS2),
                arrow = arrow(length = unit(0.015, 'npc'),
                              type = 'closed'),
                color = 'darkgray',
