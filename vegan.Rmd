@@ -202,7 +202,8 @@ fort <- fortify(nmds1)
 ggplot() +
   geom_point(data = subset(fort, 
                            Score == 'sites'),
-             mapping = aes(x = NMDS1, y = NMDS2),
+             mapping = aes(x = NMDS1, 
+                           y = NMDS2),
              color = 'black',
              alpha = 0.5) +
   geom_segment(data = subset(fort, Score == 'species'),
