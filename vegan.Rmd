@@ -114,7 +114,8 @@ Relationship between Shannon and Simpson diversity indices.
 
 ```{r}
 plot(diversity(BCI, 
-               index = 'shannon'), diversity(BCI, index = 'simpson')) # Kind of linear
+               index = 'shannon'), 
+     diversity(BCI, index = 'simpson')) # Kind of linear
 ```
 
 Assessing the relationship between shannon and invsimpson indices of diversity.
