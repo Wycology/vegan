@@ -68,7 +68,8 @@ We can have the `specnumber(BCI)` converted into  df and arranged to show which 
 
 ```{r}
 specnumber(BCI) |> 
-  as.data.frame() |> arrange(-specnumber(BCI))
+  as.data.frame() |> 
+  arrange(-specnumber(BCI))
 ```
 
 It is possible to estimate the number of species in the pool using `specpool()` function from vegan in `R`. There are 225 species, but the estimator gives values from 236 to 247 with some standard errors around them. Would be interesting to go to the back-end and look at what goes on with this function.
