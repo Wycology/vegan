@@ -200,7 +200,8 @@ Here I make some informative plots.
 ```{r}
 fort <- fortify(nmds1)
 ggplot() +
-  geom_point(data = subset(fort, Score == 'sites'),
+  geom_point(data = subset(fort, 
+                           Score == 'sites'),
              mapping = aes(x = NMDS1, y = NMDS2),
              color = 'black',
              alpha = 0.5) +
