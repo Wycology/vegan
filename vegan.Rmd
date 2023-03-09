@@ -150,7 +150,8 @@ fisher.alpha(BCI)
 Further, we can plot species accumulation curve for the data-set. This is showing how the number of species vary with number of plots sampled. Normally the curve flattens at some point in which case additional sampling does not yield any more new species.
 
 ```{r}
-plot(specaccum(comm = BCI, method = 'random', permutations = 100))
+plot(specaccum(comm = BCI, 
+               method = 'random', permutations = 100))
 
 # Other methods include rarefaction, site, collector, exact, coleman
 ```
