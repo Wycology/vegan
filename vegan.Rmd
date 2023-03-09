@@ -187,7 +187,8 @@ ordiplot(nmds1)
 ```
 
 ```{r}
-ordiplot(nmds1, type = 't')
+ordiplot(nmds1, 
+         type = 't')
 ```
 
 ```{r}
