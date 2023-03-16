@@ -212,7 +212,8 @@ ggplot() +
                              y = 0, 
                              xend = NMDS1, 
                              yend = NMDS2),
-               arrow = arrow(length = unit(0.015, 'npc'),
+               arrow = arrow(length = unit(0.015, 
+                                           'npc'),
                              type = 'closed'),
                color = 'darkgray',
                size = 0.8) +
