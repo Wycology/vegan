@@ -195,7 +195,7 @@ ordiplot(nmds1,
 autoplot(nmds1)
 ```
 
-Here I make some informative plots.
+Here I make some informative plots with.
 
 ```{r}
 fort <- fortify(nmds1)
