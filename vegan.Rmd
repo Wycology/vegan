@@ -225,7 +225,8 @@ ggplot() +
   geom_abline(intercept = 0, 
               slope = 0, 
               linetype = 'dashed', 
-              size = 0.8, color = 'gray') +
+              size = 0.8, 
+              color = 'gray') +
   geom_vline(aes(xintercept = 0), 
              linetype = 'dashed', 
              size = 0.8, 
