@@ -44,7 +44,7 @@ knitr::write_bib(c(
 
 In this write-up I explore `vegan` package. `vegan` is an `R` library that features a number of ecology relevant functions. Here I demonstrate some use cases.
 
-# Load data
+# Load data----
 
 Load data that come with the `vegan` package.
 
