@@ -1,6 +1,6 @@
 ---
 title: "**Introduction to vegan package in R**"
-author: "Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com) </center>"
+author: "Wyclife Agumba Oluoch (wyclifeoluoch@gmail.com) </cent"
 date: "<center>`r Sys.time()`</center>"
 bibliography: 
   - bib/packages.bib
