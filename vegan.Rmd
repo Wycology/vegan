@@ -108,7 +108,7 @@ diversity(BCI,
 
 # Plots that compare the indices
 
-The indices are quite related to each other. This is becau as indicated in the following plots.
+The indices are quite related to each other. This is because as indicated in the following plots.
 
 Relationship between Shannon and Simpson diversity indices.
 
