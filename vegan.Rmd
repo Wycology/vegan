@@ -64,7 +64,7 @@ The other way of getting the number of species per plot in the data-set is to us
 specnumber(BCI)
 ```
 
-We can ha the `specnumber(BCI)` converted into df and arranged to show which sampling plot had the highest number of species and which had the least.
+We can h the `specnumber(BCI)` converted into df and arranged to show which sampling plot had the highest number of species and which had the least.
 
 ```{r}
 specnumber(BCI) |> 
