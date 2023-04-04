@@ -42,7 +42,7 @@ knitr::write_bib(c(
 
 # Background----
 
-In this write-up I explore `vegan` package. `vegan` is an `R` library featuring a number of ecology relevant functions. Here I demonstrate some use cases..
+In this write-up I explore `vegan` package. `vegan` is an `R` library featuring a number of ecology relevant functions. Here I demonstrate some use cases.
 
 # Load the data----
 
