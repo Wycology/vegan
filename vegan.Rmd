@@ -58,7 +58,7 @@ There are plenty data, we can check the dimension of the data frame using the `d
 dim(BCI)
 ```
 
-The other way of getting the number of species per plot in the data-set is to use `specnumber()` function within .
+The other way of getting the number of species per plot in the data-set is to use `specnumber()` function wit.
 
 ```{r}
 specnumber(BCI)
