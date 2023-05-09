@@ -338,7 +338,7 @@ p3 <- ggplot() +
   scale_color_discrete("Shrubs")
 p3
 ```
-These are furt
+These are further
 
 ```{r}
 ggarrange(p3, 
