@@ -338,7 +338,7 @@ p3 <- ggplot() +
   scale_color_discrete("Shrubs")
 p3
 ```
-These are further pl
+These are further plots
 
 ```{r}
 ggarrange(p3, 
