@@ -1,4 +1,4 @@
-# Building a NMDS with inbuilt data 
+# Building a NMDS with inbuilt data within 
 
 library(vegan) # Version 2.6.4
 
