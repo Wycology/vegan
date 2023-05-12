@@ -1,4 +1,4 @@
-# Building a NMDS
+# Building a NMDS with 
 
 library(vegan) # Version 2.6.4
 
