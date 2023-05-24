@@ -55,7 +55,7 @@ data("BCI")
 There are plenty data, we can check the dimension of the data frame using the `dim()` function from base `R` package.
 
 ```{r}
-dim(BCI) # imensions
+dim(BCI) # dimensions
 ```
 
 The other way of getting the number of species per plot in the data-set is to use `specnumber()`.
