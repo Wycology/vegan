@@ -67,7 +67,7 @@ specnumber(BCI)
 We can convert the `specnumber(BCI)` into a df and arrange plots by the number of species.
 
 ```{r}
-specnumber(BCI) |>as.data.frame() |> 
+specnumber(BCI) |> as.data.frame() |> 
   arrange(-specnumber(BCI))
 ```
 
