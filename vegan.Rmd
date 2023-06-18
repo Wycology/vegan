@@ -70,7 +70,7 @@ We can convert the `specnumber(BCI)` into a df and arrange plots by the number o
 specnumber(BCI) |> as.data.frame() |> arrange(-specnumber(BCI))
 ```
 
-It is estimating the number of species in the pool using `specpool()` function. There are 225 species, but the estimator gives a rangvalues from 236 to 247 with some standard errors around them. Would be interesting to go to the back-end and look at what goes on with this function.
+It is estimating the number of species in the pool using `specpool()` function. There are 225 species, but the estimator gives a rangevalues from 236 to 247 with some standard errors around them. Would be interesting to go to the back-end and look at what goes on with this function.
 
 ```{r}
 specpool(BCI, 
