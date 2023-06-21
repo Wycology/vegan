@@ -104,7 +104,7 @@ diversity(BCI,
           index = 'invsimpson') # The code to run inverse of simpson index
 ```
 
-# Plots that compare the indices of the 
+# Plots that compare the indices of the Sim
 
 The indices are quite related to each other. This is because they as indicated in the following plots.
 
