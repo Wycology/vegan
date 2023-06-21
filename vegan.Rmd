@@ -104,7 +104,7 @@ diversity(BCI,
           index = 'invsimpson') # The code to run inverse of simpson index
 ```
 
-# Plots that compare the indices of the Simpson and
+# Plots that compare the indices of the Simpson and Shannon
 
 The indices are quite related to each other. This is because they as indicated in the following plots.
 
