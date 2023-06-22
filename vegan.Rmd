@@ -106,7 +106,7 @@ diversity(BCI,
 
 # Plots that compare the indices of the Simpson and Shannon
 
-The indices are cl related to each other. This is because they as indicated in the following plots.
+The indices are clo related to each other. This is because they as indicated in the following plots.
 
 Relationship between Shannon and Simpson diversity indices.
 
