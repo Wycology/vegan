@@ -337,7 +337,7 @@ p3 <- ggplot() +
 p3
 ```
 
-These are further plots that can be created to show
+These are further plots that can be created to show re
 
 ```{r}
 ggarrange(p3, 
