@@ -336,6 +336,7 @@ p3 <- ggplot() +
   scale_color_discrete("Shrubs")
 p3
 ```
+
 These are further plots that can be created 
 
 ```{r}
