@@ -337,7 +337,7 @@ p3 <- ggplot() +
 p3
 ```
 
-These are further plots that can be created 
+These are further plots that can be created t
 
 ```{r}
 ggarrange(p3, 
