@@ -69,9 +69,10 @@ Remember it is possible to change the names rownames from numbers to english let
 setNames(specnumber(BCI), english::english(1:50))
 ```
 
-This can then be set to a data.frame as follows and possibly just check the head:
+This can then be set to a data.frame as follows and possibly just check the first few rows:
 
 ```{r}
+setNames(specnumber(BCI), english::english(1:50)) |> as.data.frame() |> head()
 
 ```
 
