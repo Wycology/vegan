@@ -44,7 +44,7 @@ knitr::write_bib(c(
 
 In this write-up I explored `vegan` package. `vegan` is an `R` library featuring a number of important functions. I demonstrate some use cases.
 
-# Load the data----
+# Loading the data----
 
 Load data that come with the `vegan` package itself.
 
