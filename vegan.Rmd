@@ -52,7 +52,7 @@ Load data that come with the `vegan` package itself.
 data("BCI")
 ```
 
-There are plenty data, we can check the dimension of the data frame using the `dim()` function from base `R` package.
+There are plenty data, we can check the dimensions of the data frame using the `dim()` function from base `R` package.
 
 ```{r}
 dim(BCI) # dimensions
@@ -63,6 +63,18 @@ The other way of getting the number of species from each plot in the data-set is
 ```{r}
 specnumber(BCI)
 ```
+Remember it is possible to change the names rownames from numbers to english letters as using `english` package as follows:
+
+```{r}
+setNames(specnumber(BCI), english::english(1:50))
+```
+
+This can then be set to a data.frame as follows and possibly just check the head:
+
+```{r}
+
+```
+
 
 We can convert the `specnumber(BCI)` into a df and arrange plots by the number of species.
 
