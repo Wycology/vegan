@@ -352,7 +352,7 @@ p3 <- ggplot() +
 p3
 ```
 
-These are further plots that can be created to show add relationships within the data-set.
+These are further plots that can be created to show addi relationships within the data-set.
 
 ```{r eval=FALSE}
 ggarrange(p3, 
