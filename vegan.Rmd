@@ -195,22 +195,22 @@ Calculating the `metaMDS` on the data. It is important to look into what these f
 
 Calculating `ordiplot`. This is another plot that may need deeper understanding on how to interpret it and what it means.
 
-```{r}
+```{r eval=FALSE}
 ordiplot(nmds1)
 ```
 
-```{r}
+```{r eval=FALSE}
 ordiplot(nmds1, 
          type = 't')
 ```
 
-```{r}
+```{r eval=FALSE}
 autoplot(nmds1)
 ```
 
 Here I make some informative plots with forti.
 
-```{r}
+```{r eval=FALSE}
 fort <- fortify(nmds1)
 ggplot() +
   geom_point(data = subset(fort, 
@@ -250,7 +250,7 @@ ggplot() +
         axis.line = element_line(color = 'black'))
 ```
 
-```{r}
+```{r eval=FALSE}
 p1 <- ggplot() +
   geom_point(data = subset(fort, Score == 'sites'),
              mapping = aes(x = NMDS1, y = NMDS2),
@@ -275,7 +275,7 @@ p1 <- ggplot() +
 p1
 ```
 
-```{r}
+```{r eval=FALSE}
 p2 <- ggplot() +
   geom_point(data = subset(fort, Score == 'sites'),
              mapping = aes(x = NMDS1, y = NMDS2),
@@ -301,7 +301,7 @@ p2 <- ggplot() +
 p2
 ```
 
-```{r}
+```{r eval=FALSE}
 ggarrange(p1, p2, ncol = 1)
 ```
 
@@ -309,7 +309,7 @@ ggarrange(p1, p2, ncol = 1)
 #adonis(mite ~ Shrub, data = mite.env)
 ```
 
-```{r}
+```{r eval=FALSE}
 p3 <- ggplot() +
   geom_point(data = subset(fort, 
                            Score == 'sites'),
@@ -354,7 +354,7 @@ p3
 
 These are further plots that can be created to show relationships within the data-set.
 
-```{r}
+```{r eval=FALSE}
 ggarrange(p3, 
           p2, 
           ncol = 1)
