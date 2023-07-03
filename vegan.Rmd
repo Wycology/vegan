@@ -63,7 +63,7 @@ The other way of getting the number of species from each plot in the data-set is
 ```{r}
 specnumber(BCI)
 ```
-Remember it is possible to change the names rownames from numbers to english letters as using `english` package as follows:
+Remember it is possible to change the names rownames from numbers to nglish letters as using `english` package as follows:
 
 ```{r}
 setNames(specnumber(BCI), english::english(1:50))
