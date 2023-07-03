@@ -77,7 +77,7 @@ setNames(specnumber(BCI), english::english(1:50)) |> as.data.frame() |> head()
 ```
 
 
-We can convert the `specnumber(BCI)` into a dataframe and arrange plots by the descending number of species.
+We can convert the `specnumber(BCI)` into a data frame and arrange plots by the descending number of species.
 
 ```{r}
 specnumber(BCI) |> 
