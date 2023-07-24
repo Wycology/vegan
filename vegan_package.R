@@ -5,7 +5,7 @@ library(vegan) # Version 2.6.4
 data("varespec") # Datasets of cover by lichen specis
 data("varechem") # Corresponding environmental parameters
 
-ord <- metaMDS(varespec, distance = "bray", k = 2) # Ordination of the spes
+ord <- metaMDS(varespec, distance = "bray", k = 2) # Ordination of the sps
 
 plot(ord, type = "t") # Showing the plot 
 plot(ord, type = "p")
