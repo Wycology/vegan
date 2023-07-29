@@ -2,7 +2,7 @@
 
 library(vegan) # Version 2.6.4
 
-data("varespec") # Data sets of cover by lichen species
+data("varespec") # Data sets of proportion of cover by lichen species
 data("varechem") # Corresponding environmental parameters
 
 ord <- metaMDS(varespec, distance = "bray", k = 2) # Ordination of the species
