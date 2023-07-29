@@ -19,19 +19,16 @@ knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
 ```{r libs, echo = FALSE, warning = FALSE, message = FALSE, include = FALSE}
-<<<<<<< HEAD
-packages <- c("base",'knitr',
+packages <- c("base", 'knitr',
               'rmarkdown',
               'prettydoc',
               'vegan',
               'ggvegan',
               'ggpubr',
               "tidyverse")
-=======
 packages <- c("base", 'knitr', 'rmarkdown',
               'prettydoc', 'vegan', 'ggvegan',
               'ggpubr', "tidyverse")
->>>>>>> 4670932f75c2284ceac220b92caa2cead6dfcac0
 installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE)) {
   install.packages(packages[!installed_packages])
